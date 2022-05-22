@@ -1,0 +1,92 @@
+:root {
+    --font-official: "Times", "Source Code Pro", "PT Serif", "Libre Baskerville", "Lora", "Mukta", "Noto Sans", "Georgia", "Segoe UI Symbol", "Segoe MDL2 Assets", "仿宋", serif;
+    --background-green: linear-gradient(to right, rgb(18, 44, 56), rgb(46, 167, 206), rgb(18, 44, 56));
+    --background-blue: linear-gradient(to right, #0c63e4, rgb(46, 167, 206), #0c63e4);
+    --background-purple: linear-gradient(to right, rgb(76, 13, 122), rgb(185, 33, 196), rgb(76, 13, 122));
+    --border-green: #007bff solid 1px;
+    --green: #007bff;
+    --gradients: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+    --gray: rgba(128, 128, 128, 0.8);
+    --background-black: #15171E;
+    --default-font-size: 24px;
+    --title-weight: 750;
+    --cubic-bezier: cubic-bezier(0.16, 0.51, 0.88, 0.47);
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    list-style: none;
+}
+
+body {
+    background-position: right;
+    background-size: 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 1000px;
+    min-height: 720px;
+    background-image: var(--gradients);
+    color: white;
+    animation: bg-animation 5s infinite alternate;
+    font-family: var(--font-official);
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    gap: 20px;
+    flex-direction: column;
+    background: white;
+    height: 250px;
+}
+
+.title {
+    background-image: var(--gradients);
+    background-clip: content-box;
+    color: #ee6352;
+    white-space: nowrap;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.5em;
+    font-size: 25px;
+    font-weight: var(--title-weight);
+}
+
+.content {
+    user-select: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 650;
+    text-transform: uppercase;
+    color: white;
+    height: 70px;
+    width: 150px;
+    background-position: right;
+    transition: background-position 1s ease-in-out;
+    background-size: 300%;
+    background-image: var(--gradients);
+    font-size: var(--default-font-size);
+}
+
+.content:hover {
+    background-position: left;
+}
+
