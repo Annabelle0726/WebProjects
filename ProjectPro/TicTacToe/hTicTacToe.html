@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://img.icons8.com/clouds/100/000000/reddit.png">
+    <title>TicTae Toe</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+    </style>
+    <link rel="stylesheet" href="cTicTacToe.css">
+    <script src="jsTicTacToe.js" defer></script>
+</head>
+<body>
+<div class="board" id="board">
+    <div class="cell x" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+
+</div>
+<div class="winning-message" id="winningMessage">
+    <div class="winning-message-text" data-winning-message-text>
+        <span></span>
+    </div>
+    <div class="btn">
+        <button class="restart">Restart</button>
+        <button class="restart-hover" id="restartButton">
+            Restart
+        </button>
+    </div>
+</div>
+</body>
+</html>

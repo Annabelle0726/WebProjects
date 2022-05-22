@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="https://img.icons8.com/clouds/100/000000/reddit.png">
+    <title></title>
+    <link rel="stylesheet" href="cSearchBar.css">
+    <script src="jsSearchBar.js" defer></script>
+
+</head>
+<body>
+<div class="nav">
+    <div class="nav-item">Home</div>
+    <div class="nav-item">About</div>
+    <div class="nav-item">Contact</div>
+    <form action="hSearchBar.html" method="post" class="search">
+        <button id="search-btn" class="search-btn">
+            <img src="https://img.icons8.com/material-outlined/24/000000/search--v1.png" alt="search"/>
+        </button>
+        <label for="search-id"></label>
+            <input id="search-id" data-search type="text" class="search-content" placeholder="Search..">
+
+    </form>
+</div>
+<div class="container" data-user-cards-container>
+    <template data-user-template>
+        <div class="card">
+            <div class="card-head" data-header></div>
+            <div class="card-body" data-body-1></div>
+            <div class="card-body" data-body-2></div>
+            <div class="card-body" data-body-3></div>
+            <div class="card-body" data-body-4></div>
+            <div class="card-body" data-body-5></div>
+        </div>
+    </template>
+</div>
+</div>
+</body>
+</html>
